@@ -1,0 +1,53 @@
+project: ActionAudit
+phase: 1
+study: SUPPORT2 phenomenon test
+random_seed: 2027
+
+prediction_landmark:
+  description: SUPPORT study-entry/day-3 assessment landmark
+  day: 3
+  filter_hday_equals_3: false
+
+observation_boundary:
+  primary: hospital
+
+horizons_days:
+  primary: 60
+  secondary: 180
+
+models:
+  initial_go_no_go:
+    - fixed_horizon_logistic
+  full_phase:
+    - cox_ph
+    - random_survival_forest
+    - neural_survival
+
+split:
+  unit: patient
+  train_fraction: 0.60
+  validation_fraction: 0.20
+  test_fraction: 0.20
+  stratify_by:
+    - outcome_60
+    - hospital
+
+calibration:
+  initial_method: reference_quantile_bins
+  n_bins: 10
+  min_bin_size: 25
+  common_weight_distribution: full_test_cohort
+  smoother_for_final_analysis: local_logistic_or_spline
+
+restricted_view:
+  rule: outcome becomes unobserved after alive hospital discharge before horizon
+  keep_in_hospital_deaths_observed: true
+
+phase1_go_no_go:
+  require_stable_bootstrap_difference: true
+  primary_quantities:
+    - reference_ici
+    - restricted_ici
+    - standardized_signed_gap
+    - max_curve_difference
+  decision_rule_status: to_be_calibrated_after_feasibility_audit

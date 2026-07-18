@@ -1,0 +1,4 @@
+| Dataset | Sensitivity view | Evidence type | Global robustness margin | Closest localized margin | Closest localized group | Relative margin reduction | Localized advantage 95% interval | Tipping-threshold range |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| SUPPORT2 | dnr_policy_partition | Descriptive discharge-linked partition | 3.530 | 2.056 | alive_hospital_discharge__dnr_after_study_admission | 41.8% | [1.166, 2.128] | 0.383 |
+| MIMIC-IV | native_discharge_actions | Native discharge actions | 4.768 | 1.132 | hospice | 76.3% | [3.360, 3.910] | 0.771 |

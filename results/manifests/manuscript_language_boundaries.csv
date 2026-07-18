@@ -1,0 +1,7 @@
+claim,permitted_language,prohibited_language
+H1,Action-dependent outcome truncation substantially changed measured calibration in both clinical datasets.,Do not describe the distortion as a causal treatment effect.
+H2,The magnitude of distortion varied meaningfully across prespecified and descriptive strata.,Do not interpret subgroup contrasts as causal effects. Do not claim an institution effect because institution identifiers were unavailable.
+H4,Adjustment succeeded in the better-identified SUPPORT2 setting but not under the severe MIMIC positivity limitations.,Do not claim that all adjustment methods fail universally or that survival regression always succeeds.
+H5,Localized sensitivity provided information hidden by a single global perturbation.,"Do not describe SUPPORT2 DNR, disease, or timing partitions as native causal actions."
+H6,Observation-policy shifts produced apparent drift in controlled real-data-grounded emulations.,Do not describe the emulations as historical or causal estimates of actual hospital policy changes.
+H7,"Policy-selected recalibration can create target mismatch, as observed in synthetic data and MIMIC.",Do not describe H7 as strong cross-dataset support or as a universal failure of recalibration.

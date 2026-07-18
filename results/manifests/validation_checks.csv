@@ -1,0 +1,8 @@
+check,value,threshold,comparison,passed
+Phase 6A claim manifest already frozen,phase6a_final_claim_manifest_frozen,phase6a_final_claim_manifest_frozen,==,True
+six manuscript tables generated in three formats,18,18,==,True
+five manuscript figures generated in PNG and PDF,10,10,==,True
+H6 aggressive-policy interval excludes zero in both datasets,1,1,==,True
+H5 localized margin reductions match frozen evidence,"41.8,76.3","41.8,76.3",==,True
+H7 dataset-specific directions are preserved,1,1,==,True
+excluded manuscript topic is absent from package,0,0,==,True

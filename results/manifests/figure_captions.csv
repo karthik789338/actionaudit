@@ -1,0 +1,6 @@
+figure,file,caption
+Figure 1,figure_01_audit_framework,ActionAudit separates the fixed prediction and linked-outcome target from the hospital-boundary process that determines which outcomes enter a restricted audit.
+Figure 2,figure_02_reference_vs_restricted_ici,Calibration measured only among hospital-observed outcomes was substantially worse than calibration measured against the linked complete-outcome target in both datasets.
+Figure 3,figure_03_localized_sensitivity_margins,Localized analysis identified strata or discharge actions with smaller robustness margins than the common global perturbation.
+Figure 4,figure_04_observation_policy_drift,Changing only the emulated observation policy altered the restricted calibration estimate while predictions and linked outcomes remained fixed.
+Figure 5,figure_05_recalibration_target_mismatch,"In MIMIC-IV, aggressive-policy recalibration improved the restricted target while harming the linked target. SUPPORT2 did not reproduce that pattern."

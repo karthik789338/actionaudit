@@ -1,0 +1,7 @@
+table,file,caption
+Table 1,table_01_dataset_summary,Evaluation cohorts and the difference between calibration measured against linked outcomes and calibration measured only within hospital-observed follow-up.
+Table 2,table_02_h1_h2_evidence,Cross-dataset evidence for hospital-boundary calibration distortion and its heterogeneity across clinically meaningful strata.
+Table 3,table_03_h4_adjustment_benchmark,Adjustment benchmarks under different identification and overlap regimes. Lower reference-calibration MAE is better.
+Table 4,table_04_h5_localized_sensitivity,Comparison of a common global sensitivity margin with the closest localized action- or stratum-specific margin.
+Table 5,table_05_h6_policy_shift,Apparent calibration drift under controlled real-data-grounded observation-policy emulations.
+Table 6,table_06_h7_recalibration,Effect of logistic recalibration fitted under aggressive outcome restriction on the restricted and linked reference targets.

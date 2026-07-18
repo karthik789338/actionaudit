@@ -1,0 +1,11 @@
+| Claim | Dataset | Dimension | Estimate | 95% interval | Interpretation |
+| --- | --- | --- | --- | --- | --- |
+| H1 | SUPPORT2 | Hospital-boundary outcome restriction | Direct: standardized signed distortion 0.412717; reference ICI 0.019736; restricted ICI 0.407274. |  | Measured calibration changed materially when evaluation was restricted to outcomes observed before hospital exit. |
+| H1 | MIMIC-IV | Hospital-boundary outcome restriction | Direct: standardized signed distortion 0.487502; reference ICI 0.001429; restricted ICI 0.486803. |  | Measured calibration changed materially when evaluation was restricted to outcomes observed before hospital exit. |
+| H2 | SUPPORT2 | DNR policy partition | Range = 0.354 | [0.292, 0.414] | Descriptive discharge-linked partition; not a causal action contrast. |
+| H2 | SUPPORT2 | disease-group partition | Range = 0.137 | [0.109, 0.164] | Descriptive discharge-linked partition; not a causal action contrast. |
+| H2 | SUPPORT2 | hospital-timing partition | Range = 0.267 | [0.216, 0.320] | Descriptive discharge-linked partition; not a causal action contrast. |
+| H2 | MIMIC-IV | icu_minus_non_icu | Difference = 0.196 | [0.146, 0.248] | Interval excludes zero. |
+| H2 | MIMIC-IV | weekend_minus_weekday | Difference = -0.016 | [-0.081, 0.053] | Interval includes zero; retained as a dimension-specific null result. |
+| H2 | MIMIC-IV | latest_minus_earliest_era | Difference = -0.154 | [-0.239, -0.062] | Interval excludes zero. |
+| H2 | MIMIC-IV | overnight_minus_morning | Difference = 0.136 | [0.000, 0.273] | Interval excludes zero. |

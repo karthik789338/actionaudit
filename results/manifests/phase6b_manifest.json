@@ -1,0 +1,119 @@
+{
+  "phase": "6B",
+  "status": "phase6b_manuscript_tables_figures_frozen",
+  "claim_set": [
+    "H1",
+    "H2",
+    "H4",
+    "H5",
+    "H6",
+    "H7"
+  ],
+  "table_count": 6,
+  "figure_count": 5,
+  "table_formats": [
+    "CSV",
+    "LaTeX",
+    "Markdown"
+  ],
+  "figure_formats": [
+    "PNG",
+    "PDF"
+  ],
+  "table_files": [
+    {
+      "stem": "table_01_dataset_summary",
+      "rows": 2,
+      "columns": [
+        "Dataset",
+        "Outcome horizon (days)",
+        "Evaluation sample",
+        "Linked event rate",
+        "Reference ICI",
+        "Hospital-restricted ICI",
+        "Standardized signed distortion"
+      ]
+    },
+    {
+      "stem": "table_02_h1_h2_evidence",
+      "rows": 9,
+      "columns": [
+        "Claim",
+        "Dataset",
+        "Dimension",
+        "Estimate",
+        "95% interval",
+        "Interpretation"
+      ]
+    },
+    {
+      "stem": "table_03_h4_adjustment_benchmark",
+      "rows": 10,
+      "columns": [
+        "Dataset",
+        "Estimator",
+        "Reference-calibration MAE",
+        "Empirical reading"
+      ]
+    },
+    {
+      "stem": "table_04_h5_localized_sensitivity",
+      "rows": 2,
+      "columns": [
+        "Dataset",
+        "Sensitivity view",
+        "Evidence type",
+        "Global robustness margin",
+        "Closest localized margin",
+        "Closest localized group",
+        "Relative margin reduction",
+        "Localized advantage 95% interval",
+        "Tipping-threshold range"
+      ]
+    },
+    {
+      "stem": "table_05_h6_policy_shift",
+      "rows": 2,
+      "columns": [
+        "Dataset",
+        "Outcome horizon (days)",
+        "Observation-fraction range",
+        "Restricted-ICI range",
+        "Aggressive minus baseline ICI",
+        "Aggressive contrast 95% interval",
+        "Conservative minus baseline ICI",
+        "Conservative contrast 95% interval",
+        "Conservative result"
+      ]
+    },
+    {
+      "stem": "table_06_h7_recalibration",
+      "rows": 2,
+      "columns": [
+        "Dataset",
+        "Outcome horizon (days)",
+        "Primary checks",
+        "Restricted ICI change",
+        "Reference ICI change",
+        "Restricted log-loss change",
+        "Reference log-loss change",
+        "Evidence classification"
+      ]
+    }
+  ],
+  "figure_files": [
+    "figure_01_audit_framework",
+    "figure_02_reference_vs_restricted_ici",
+    "figure_03_localized_sensitivity_margins",
+    "figure_04_observation_policy_drift",
+    "figure_05_recalibration_target_mismatch"
+  ],
+  "interpretation_boundaries": [
+    "All numerical claims are drawn from frozen experimental evidence.",
+    "Real-data policy analyses are controlled emulations rather than causal or historical policy effects.",
+    "SUPPORT2 sensitivity partitions are descriptive discharge-linked strata.",
+    "H7 retains the SUPPORT2 non-replication.",
+    "SUPPORT2 and MIMIC-IV estimates are displayed separately and are not statistically pooled."
+  ],
+  "next_stage": "Phase 6C manuscript methods, results, limitations, and claim-boundary drafts."
+}

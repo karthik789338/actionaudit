@@ -1,0 +1,26 @@
+{
+  "phase": "6A",
+  "status": "phase6a_final_claim_manifest_frozen",
+  "purpose": "Authoritative experiment, claim, and language-boundary registry for manuscript preparation.",
+  "primary_claims": [
+    "H1",
+    "H2",
+    "H4",
+    "H5",
+    "H6"
+  ],
+  "secondary_claims": [
+    "H7"
+  ],
+  "claim_count": 6,
+  "experiment_registry_count": 9,
+  "source_claim_file_count": 4,
+  "rules": [
+    "Only frozen artifacts may be used for manuscript tables, figures, or numerical claims.",
+    "H7 must retain the SUPPORT2 non-replication.",
+    "Real-data policy experiments must be called controlled real-data-grounded emulations.",
+    "SUPPORT2 descriptive partitions must not be described as native causal actions.",
+    "SUPPORT2 and MIMIC estimates must not be statistically pooled."
+  ],
+  "next_stage": "Phase 6B manuscript tables and figures."
+}
