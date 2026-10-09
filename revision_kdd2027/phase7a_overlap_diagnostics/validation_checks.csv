@@ -1,0 +1,6 @@
+check,value,expected,passed
+SUPPORT2_expected_n,1821.0,1821,True
+MIMIC-IV_expected_n,31012.0,31012,True
+mimic_covariate_balance_generated,106.0,>0,True
+mimic_levels_abs_smd_gt_0p1,30.0,diagnostic,True
+mimic_max_abs_smd,0.5767883234974883,diagnostic,True

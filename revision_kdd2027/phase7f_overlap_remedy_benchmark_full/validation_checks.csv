@@ -1,0 +1,10 @@
+check,value,threshold,comparison,passed
+expected_remedy_rows,4800,4800,==,True
+reference_event_process_invariant,0.0,1e-12,<=,True
+mean_observed_fraction_within_0p03,0.0024540000000000117,0.03,<=,True
+all_replication_numeric_outputs_finite,True,True,==,True
+clip0p05_exactly_reproduces_phase7b,4.547473508864641e-13,1e-10,<=,True
+maximum_weight_nonincreasing_with_clip,True,True,==,True
+fraction_clipped_nondecreasing_with_clip,True,True,==,True
+all_summary_numeric_outputs_finite,True,True,==,True
+ess_nondecreasing_fraction_diagnostic,1.0,diagnostic_only,report,True

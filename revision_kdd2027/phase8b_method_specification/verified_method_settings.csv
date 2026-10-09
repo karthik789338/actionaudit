@@ -1,0 +1,9 @@
+component,setting,value,source
+Recalibration audit,risk bins,5,Phase 8A reconstruction
+Recalibration audit,calibration/evaluation fraction,0.5 / 0.5 stratified,Phase 8A reconstruction
+Recalibration audit,split seed,2038,Phase 8A reconstruction
+Recalibration audit,bootstrap replicates,1000,Phase 8A reconstruction
+Recalibration audit,base seed,2027,Phase 8A reconstruction
+SUPPORT2 binary DR benchmark,horizon / bins / propensity clip / bootstraps / seed,60d / 5 / 0.05 / 1000 / 2027,scripts/phase2b_support2_dr.py defaults
+MIMIC practitioner estimator benchmark,horizon / bins / crossfit repeats / propensity clip / bootstraps / seed,30d / 5 / 5 / 0.01 / 1000 / 2027,scripts/phase5g_practitioner_estimators.py defaults
+MIMIC rich/AIPW benchmark,reported propensity clipping grid,"0.01, 0.025, 0.05",scripts/phase5g_rich_baseline_estimators.py

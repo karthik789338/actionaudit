@@ -1,0 +1,38 @@
+Phase 7E interpretation
+
+This experiment varies design choices in the ActionAudit
+calibration machinery while leaving predictions, outcomes,
+observation indicators, and evaluation populations unchanged.
+
+Core bin-count grid:
+5, 10, 15, 20, 30, 40 reference-cohort quantile bins.
+
+Minimum-bin-size grid:
+10, 25, 50.
+
+Manuscript-primary harmonized configuration:
+5 quantile bins.
+
+Historical SUPPORT2 Phase 1B used 10 bins. Phase 5H later
+introduced five harmonized score bins for the cross-dataset
+manuscript analysis. The minimum-bin-size value of 25 is an
+ActionAudit eligibility setting, not the historical Phase 1B
+bin-count definition.
+
+Stress tests:
+60 and 80 quantile bins with minimum bin size 25.
+
+Bins are marked ineligible by the existing ActionAudit
+implementation when the reference bin is smaller than the
+configured minimum or has no observed outcome. Metrics are
+reported only when at least one eligible bin remains. The
+retained reference weight and number of ineligible bins are
+reported explicitly so that sparse-bin behavior cannot be
+silently hidden.
+
+Bootstrap-count sensitivity:
+For the frozen configuration, one patient-level bootstrap run
+is generated and percentile intervals are recomputed using the
+first 200, 500, and 1000 replicates. This tests Monte Carlo
+stability without changing the point estimate or selectively
+rerunning favorable samples.

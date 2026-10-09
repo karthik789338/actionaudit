@@ -1,0 +1,7 @@
+item,verified_rule,source
+Bin construction,Reference-cohort quantile edges are computed from the fixed prediction distribution; duplicate quantile edges are removed; first/last edges are set to -inf/+inf.,src/actionaudit/metrics.py and src/actionaudit/km.py
+Assignment,"Predictions are assigned with pandas.cut(..., include_lowest=True). Estimator paths explicitly error if any prediction is unassigned.","src/actionaudit/km.py, dr.py, discrete_survival.py"
+Empty bins,"groupby(..., observed=True) means bins containing no records do not produce estimator rows. Quantile-edge de-duplication can reduce the realized number of bins when predictions have ties.",src/actionaudit/metrics.py
+ActionAudit bin eligibility,A bin is eligible only when n_bin >= min_bin_size AND n_observed > 0. Ineligible bins receive NaN calibration quantities.,src/actionaudit/metrics.py
+Integration distribution,"Each eligible bin receives reference weight n_bin/n_total. For the core ActionAudit scalar summaries, weights over eligible bins are renormalized to sum to one before ICI/calibration-error integration.",src/actionaudit/metrics.py
+Sparse-bin robustness,Phase 7E separately varied bin count and minimum-bin-size rules; this is empirical robustness evidence rather than part of the original estimator definition.,revision_kdd2027/phase7e_*

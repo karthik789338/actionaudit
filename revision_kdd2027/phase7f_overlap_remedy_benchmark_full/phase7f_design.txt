@@ -1,0 +1,53 @@
+Phase 7F-A design
+
+Purpose:
+Test practical weight-truncation remedies as overlap weakens
+while preserving the exact controlled Phase 7B data-generating
+process.
+
+Phase 7B source:
+revision_kdd2027/phase7b_fixed_observation_overlap_full
+
+Strengths:
+[0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.75, 1.0]
+
+Clipping thresholds:
+[0.005, 0.01, 0.025, 0.05, 0.1, 0.2]
+
+Reference clipping threshold:
+0.05
+
+Replicates:
+100
+
+Development n:
+3000
+
+Test n:
+5000
+
+Horizon:
+60
+
+Calibration bins:
+5
+
+Seed:
+2027
+
+Interpretation:
+This is a survival-risk-set IPCW remedy experiment. It does not
+substitute a binary label-observability propensity model for the
+survival censoring process.
+
+The clipping threshold lower-bounds estimated censoring survival
+probabilities, thereby upper-bounding inverse censoring weights.
+Stronger clipping can improve variance and effective sample size
+but can increase bias. No validation criterion requires a remedy
+to improve estimation error.
+
+Oracle nuisance results use the true simulated event and censoring
+hazards. Learned nuisance results use the same correctly specified
+observed-covariate pooled-logistic nuisance family as Phase 7B.
+
+The clip=0.05 condition must reproduce Phase 7B numerically.

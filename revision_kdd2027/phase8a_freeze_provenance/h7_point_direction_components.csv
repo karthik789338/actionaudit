@@ -1,0 +1,9 @@
+dataset,component,point_direction_passes
+SUPPORT2,restricted_ici_improves,False
+SUPPORT2,reference_ici_worsens,True
+SUPPORT2,restricted_logloss_improves,True
+SUPPORT2,reference_logloss_worsens,True
+MIMIC-IV,restricted_ici_improves,True
+MIMIC-IV,reference_ici_worsens,True
+MIMIC-IV,restricted_logloss_improves,True
+MIMIC-IV,reference_logloss_worsens,True

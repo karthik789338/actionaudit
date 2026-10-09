@@ -1,0 +1,3 @@
+dataset,n_total,n_calibration,n_evaluation,n_outcome_1_total,n_bins,calibration_fraction,split_seed,base_seed,bootstrap_replicates,minimum_observed_split_n
+SUPPORT2,1821,910,911,632,5,0.5,2038,2027,1000,20
+MIMIC-IV,31012,15506,15506,2816,5,0.5,2038,2027,1000,20

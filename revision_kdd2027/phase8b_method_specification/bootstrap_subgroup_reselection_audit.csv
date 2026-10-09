@@ -1,0 +1,3 @@
+dataset,procedure,reselected_within_each_bootstrap,source
+SUPPORT2,Each patient-level bootstrap sample is passed through calculate_point_results; the closest/minimum eligible subgroup is recomputed from that resample rather than holding the original closest subgroup fixed.,True,scripts/phase5i_support2_partition_sensitivity.py
+MIMIC-IV,Bootstrap action results are grouped by bootstrap_id and the minimum distance-to-tipping is computed within each replicate; therefore the identity of the closest action may change by replicate.,True,scripts/phase5i_cross_dataset_h5_freeze.py

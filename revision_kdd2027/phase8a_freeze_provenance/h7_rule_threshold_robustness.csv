@@ -1,0 +1,13 @@
+dataset,rule_family,threshold_k,bootstrap_checks_passed,classification_positive
+SUPPORT2,k_of_4_bootstrap_checks,1,0,False
+SUPPORT2,k_of_4_bootstrap_checks,2,0,False
+SUPPORT2,k_of_4_bootstrap_checks,3,0,False
+SUPPORT2,k_of_4_bootstrap_checks,4,0,False
+SUPPORT2,all_four_point_estimate_directions,4,0,False
+SUPPORT2,three_of_four_point_estimate_directions,3,0,True
+MIMIC-IV,k_of_4_bootstrap_checks,1,4,True
+MIMIC-IV,k_of_4_bootstrap_checks,2,4,True
+MIMIC-IV,k_of_4_bootstrap_checks,3,4,True
+MIMIC-IV,k_of_4_bootstrap_checks,4,4,True
+MIMIC-IV,all_four_point_estimate_directions,4,4,True
+MIMIC-IV,three_of_four_point_estimate_directions,3,4,True

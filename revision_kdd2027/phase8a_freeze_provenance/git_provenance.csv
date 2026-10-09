@@ -1,0 +1,8 @@
+evidence,path_or_search,commit,date,subject
+recalibration_implementation_file,scripts/phase5j_realdata_recalibration_fragility.py,3693f741e7995181fb48b2bd4356acf0e4d18b00,2026-07-18T07:33:33+00:00,Release reproducible code and aggregate KDD 2027 results
+cross_dataset_freeze_file,scripts/phase5j_h7_mixed_evidence_freeze.py,3693f741e7995181fb48b2bd4356acf0e4d18b00,2026-07-18T07:33:33+00:00,Release reproducible code and aggregate KDD 2027 results
+aggregate_recalibration_table,results/tables/table_06_h7_recalibration.csv,3693f741e7995181fb48b2bd4356acf0e4d18b00,2026-07-18T07:33:33+00:00,Release reproducible code and aggregate KDD 2027 results
+first_commit_adding_core_decision_function,scripts/phase5j_realdata_recalibration_fragility.py :: -S def build_h7_core_checks,3693f741e7995181fb48b2bd4356acf0e4d18b00,2026-07-18T07:33:33+00:00,Release reproducible code and aggregate KDD 2027 results
+first_commit_adding_restricted_ici_check,scripts/phase5j_realdata_recalibration_fragility.py :: -S restricted_ici_change,3693f741e7995181fb48b2bd4356acf0e4d18b00,2026-07-18T07:33:33+00:00,Release reproducible code and aggregate KDD 2027 results
+first_commit_adding_reference_logloss_check,scripts/phase5j_realdata_recalibration_fragility.py :: -S reference_log_loss_change,3693f741e7995181fb48b2bd4356acf0e4d18b00,2026-07-18T07:33:33+00:00,Release reproducible code and aggregate KDD 2027 results
+first_commit_adding_cross_dataset_rule_use,scripts/phase5j_h7_mixed_evidence_freeze.py :: -S core_h7_checks_passed,,,

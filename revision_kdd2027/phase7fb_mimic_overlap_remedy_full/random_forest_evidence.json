@@ -1,0 +1,13 @@
+{
+  "phase": "5G-D",
+  "status": "phase5g_random_forest_estimators_benchmarked",
+  "family": "RandomForestClassifier",
+  "n_estimators": 300,
+  "max_depth": 12,
+  "min_samples_leaf": 50,
+  "max_samples": 0.8,
+  "crossfit_repeats": 5,
+  "bootstrap_replicates": 1000,
+  "purpose": "Model-family sensitivity only; not reference-outcome model selection.",
+  "oracle_use": "Linked outcomes used only for retrospective evaluation."
+}

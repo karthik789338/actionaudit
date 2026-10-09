@@ -1,0 +1,17 @@
+check,value,expected,passed
+SUPPORT2_expected_n,1821,1821,True
+SUPPORT2_frozen_config_estimable,True,True,True
+SUPPORT2_frozen_reference_ici,0.019735532871166937,0.02,True
+SUPPORT2_frozen_restricted_ici,0.40727369910350886,0.407,True
+SUPPORT2_core_bin_counts_estimable,True,True,True
+SUPPORT2_core_bin_counts_preserve_primary_direction,True,True,True
+SUPPORT2_estimable_core_outputs_finite,True,True,True
+MIMIC-IV_expected_n,31012,31012,True
+MIMIC-IV_frozen_config_estimable,True,True,True
+MIMIC-IV_frozen_reference_ici,0.0014718355579702175,0.001,True
+MIMIC-IV_frozen_restricted_ici,0.4827368011542327,0.487,True
+MIMIC-IV_core_bin_counts_estimable,True,True,True
+MIMIC-IV_core_bin_counts_preserve_primary_direction,True,True,True
+MIMIC-IV_estimable_core_outputs_finite,True,True,True
+SUPPORT2_bootstrap_checkpoints_present,"[200, 500, 1000]","[200, 500, 1000]",True
+MIMIC-IV_bootstrap_checkpoints_present,"[200, 500, 1000]","[200, 500, 1000]",True

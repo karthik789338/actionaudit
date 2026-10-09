@@ -1,0 +1,45 @@
+Phase 7F-B design
+
+Dataset:
+MIMIC-IV frozen test cohort
+
+Admissions:
+31012
+
+Purpose:
+Extend the empirical Phase 5G overlap-remedy benchmark while
+changing only the propensity clipping grid.
+
+Clipping grid:
+[0.005, 0.01, 0.025, 0.05, 0.1, 0.2]
+
+Frozen reference clipping level:
+0.05
+
+Nuisance families:
+rich logistic
+histogram gradient boosting
+random forest
+
+Estimators:
+IPCW
+AIPW
+
+Calibration bins:
+5
+
+Inference:
+patient-cluster bootstrap conditional on repeated cross-fitted
+nuisance predictions
+
+Bootstrap replicates:
+1000
+
+Validation:
+All original Phase 5G point estimates must reproduce within
+1e-10. No validation gate requires any remedy to improve error.
+
+Interpretation boundary:
+This empirical analysis uses the Phase 5G binary
+observation-probability weighting/augmentation construction.
+It must not be described as survival risk-set IPCW.

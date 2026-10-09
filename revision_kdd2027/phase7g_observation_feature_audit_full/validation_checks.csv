@@ -1,0 +1,13 @@
+check,value,threshold,comparison,passed
+frozen full predictions reproduced,1.1102230246251565e-16,1e-10,<=,True
+frozen linked ICI reproduced,2.4936649967166602e-17,1e-10,<=,True
+frozen restricted ICI reproduced,0.0,1e-10,<=,True
+frozen raw feature count,21,21,==,True
+no forbidden current-admission post-outcome features,[],[],==,True
+all eight prior-utilization features removed in ablation,8,8,==,True
+all broader operational proxies removed in stress ablation,7,7,==,True
+observation scores finite and within probability bounds,True,True,==,True
+test admissions preserved,31012,31012,==,True
+all requested patient bootstraps completed,1000,1000,==,True
+all model point estimates finite,True,True,==,True
+feature-effect directions treated as diagnostic rather than success criteria,True,True,==,True

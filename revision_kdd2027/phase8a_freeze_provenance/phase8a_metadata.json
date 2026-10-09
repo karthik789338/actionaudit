@@ -1,0 +1,14 @@
+{
+  "phase": "8A",
+  "type": "audit_only_no_new_experiment",
+  "current_head": "3693f741e7995181fb48b2bd4356acf0e4d18b00",
+  "current_head_date": "2026-07-18T07:33:33+00:00",
+  "current_head_subject": "Release reproducible code and aggregate KDD 2027 results",
+  "total_git_commits_visible": 1,
+  "working_tree_clean": false,
+  "working_tree_status": "?? revision_kdd2027/\n?? scripts/revision/\n?? src/actionaudit.egg-info/",
+  "recalibration_source_sha256": "2b1a2fb7b073862e88dc5f77672c5c35f1078570261934a9a6094ccc802ef8e0",
+  "decision_rule_matches_expected_current_source": true,
+  "git_rule_vs_table_ordering": "rule commit is an ancestor of/equal to first table-touch commit",
+  "chronology_limitation": "Git history can establish when code/files were committed, but cannot by itself prove when linked outcomes or locally generated recalibration results were first inspected. Do not claim such chronology unless an independent dated artifact/log/commit establishes it."
+}

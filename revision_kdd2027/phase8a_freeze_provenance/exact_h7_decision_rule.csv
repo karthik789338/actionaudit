@@ -1,0 +1,5 @@
+check_number,fit_policy,method,metric,bootstrap_quantity,criterion,meaning,verified_against_current_source
+1,aggressive_early,logistic,restricted_ici_change,q975,q975 < 0,restricted ICI improves,True
+2,aggressive_early,logistic,reference_ici_change,q025,q025 > 0,linked/reference ICI worsens,True
+3,aggressive_early,logistic,restricted_log_loss_change,q975,q975 < 0,restricted log loss improves,True
+4,aggressive_early,logistic,reference_log_loss_change,q025,q025 > 0,linked/reference log loss worsens,True

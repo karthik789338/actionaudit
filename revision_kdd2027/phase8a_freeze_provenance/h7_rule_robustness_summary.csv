@@ -1,0 +1,3 @@
+dataset,bootstrap_checks_passed,bootstrap_checks_total,point_directions_aligned,positive_under_any_k_1_to_4_bootstrap_rule,positive_under_all_four_bootstrap_rule
+SUPPORT2,0,4,3,False,False
+MIMIC-IV,4,4,4,True,True

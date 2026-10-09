@@ -1,0 +1,10 @@
+{
+  "classification_invariant_for_bootstrap_thresholds_k_1_to_4": true,
+  "support2_bootstrap_checks": "0/4",
+  "mimic_bootstrap_checks": "4/4",
+  "support2_point_estimate_directions": "3/4",
+  "mimic_point_estimate_directions": "4/4",
+  "four_part_rule_interpretation": "The released rule is best interpreted as a conjunction, not a vote: restricted ICI and restricted log loss must both improve, while linked ICI and linked log loss must both worsen. A 3-of-4 point-sign rule would label SUPPORT2 despite its restricted ICI worsening, which is not the target-mismatch pattern being defined.",
+  "provenance_interpretation": "The public repository contains a single consolidated release commit. It verifies the exact released configuration and rule, but does not independently establish when the authors first inspected linked-outcome results. No new experiment can retroactively prove that chronology; only contemporaneous dated records could.",
+  "visible_git_commits": 1
+}

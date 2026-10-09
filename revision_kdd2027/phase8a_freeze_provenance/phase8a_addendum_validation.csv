@@ -1,0 +1,6 @@
+check,passed
+support2_has_zero_of_four_bootstrap_checks,True
+mimic_has_four_of_four_bootstrap_checks,True
+classification_invariant_for_k_1_to_4_bootstrap_thresholds,True
+support2_three_of_four_point_directions,True
+mimic_four_of_four_point_directions,True

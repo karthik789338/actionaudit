@@ -1,0 +1,9 @@
+check,value,threshold,comparison,passed
+all frozen Phase 5G methods reproduced,True,True,==,True
+frozen Phase 5G numerical reproduction,1.1102230246251565e-16,1e-10,<=,True
+all expanded remedy point estimates present,36,36,==,True
+all three nuisance families have positivity diagnostics,3,3,==,True
+MIMIC admission count preserved,31012,31012,==,True
+all remedy bootstrap comparisons complete,1000,1000,==,True
+all remedy point outputs finite,True,True,==,True
+best empirical AIPW clips recorded without success gate,hgb:0.2; rf:0.2; rich_logistic:0.2,diagnostic_only,report,True

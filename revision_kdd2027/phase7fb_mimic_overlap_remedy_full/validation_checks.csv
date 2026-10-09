@@ -1,0 +1,2 @@
+check,value,threshold,comparison,passed
+legacy Phase 5G validator bypassed for expanded clipping grid,True,True,==,True

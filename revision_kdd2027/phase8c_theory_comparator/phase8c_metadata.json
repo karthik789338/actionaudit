@@ -1,0 +1,41 @@
+{
+  "phase": "8C",
+  "experiment": "cross_fitted_survival_aipcw_one_step_under_fixed_observation_overlap_sweep",
+  "replicates": 100,
+  "test_n": 5000,
+  "horizon": 60,
+  "n_bins": 5,
+  "folds": 2,
+  "logistic_c": 100.0,
+  "aipcw_censor_survival_clip": 0.01,
+  "baseline_ipcw_clip": 0.05,
+  "target_observed_fraction": 0.3,
+  "strengths": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "features": [
+    "x1",
+    "x2"
+  ],
+  "event_process": {
+    "event_intercept": -4.7,
+    "event_time_slope": 0.012,
+    "event_x1": 0.7,
+    "event_x2": 0.65,
+    "event_u": 0.0
+  },
+  "overlap_path": {
+    "censor_x1": "-0.75 * strength",
+    "censor_x2": "0.95 * strength",
+    "censor_intercept": "calibrated per strength to target overall observed fraction",
+    "censor_u": 0.0
+  },
+  "primary_interpretation_boundary": "The AIPCW comparator is theory-motivated under conditional independent censoring and positivity. It is not claimed to overcome actual positivity violations; severe lower-tail support remains a scope condition."
+}

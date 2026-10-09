@@ -28,3 +28,28 @@ artifacts/
 *.sqlite3
 *.pem
 *.key
+
+# KDD 2027 revision local/private artifacts
+data/raw/
+artifacts/phase5c_mimic_readiness/*.csv*
+artifacts/phase5c_frozen_cohort/*.csv*
+artifacts/phase5c_admission_model/*predictions*.csv*
+artifacts/phase5h_support2_definitions/*harmonized*.csv*
+
+# Generated Python/build files
+**/__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+src/actionaudit.egg-info/
+
+# Local logs and temporary copies
+revision_kdd2027/**/*.log
+revision_kdd2027/*.log
+phase8c_theory_comparator_fixed.py
+
+# Row-level / large intermediate revision outputs
+revision_kdd2027/**/cross_fitted_*nuisance_predictions.csv.gz
+revision_kdd2027/**/phase7g_test_predictions.csv.gz
+revision_kdd2027/**/*replicates.csv.gz
+revision_kdd2027/**/*replication_results.csv.gz

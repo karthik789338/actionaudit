@@ -1,0 +1,7 @@
+check,value,expected,passed
+expected_condition_rows,400,400,True
+expected_contrast_rows,300,300,True
+all_controlled_invariance_checks,True,True,True
+observation_only_reference_ici_invariant,0.0,1e-12,True
+outcome_only_exit_process_invariant,0.0,1e-12,True
+all_numeric_outputs_finite,True,True,True

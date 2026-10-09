@@ -1,0 +1,11 @@
+check,value,expected,passed
+expected_test_admissions,31012,31012,True
+expected_native_observed_count,2425,2425,True
+native_visibility_exactly_reproduced,True,True,True
+observed_fraction_monotone,True,True,True
+thirty_day_extension_complete,1.0,1.0,True
+linked_event_rate_invariant,0.0,0.0,True
+linked_ici_invariant,0.0,0.0,True
+linked_ici_consistent_with_manuscript,0.001471835557970223,0.001,True
+native_restricted_ici_consistent_with_manuscript,0.4827368011542327,0.487,True
+all_required_numeric_outputs_finite,True,True,True

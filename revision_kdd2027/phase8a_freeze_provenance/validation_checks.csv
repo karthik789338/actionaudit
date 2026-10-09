@@ -1,0 +1,7 @@
+check,value,expected,passed
+SUPPORT2_expected_n,1821,1821,True
+SUPPORT2_split_complete,1821,1821,True
+MIMIC-IV_expected_n,31012,31012,True
+MIMIC-IV_split_complete,31012,31012,True
+decision_rule_source_verified,True,True,True
+five_bins_each_dataset,5,5,True

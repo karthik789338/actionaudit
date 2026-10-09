@@ -1,0 +1,49 @@
+Phase 7G: observation-process-as-feature audit
+
+Frozen dataset:
+MIMIC-IV test admissions = 31,012
+
+Frozen model:
+gbm
+parameters = {'learning_rate': 0.05, 'max_leaf_nodes': 31, 'l2_regularization': 10.0}
+
+Frozen raw predictor features:
+21
+
+Prior-utilization proxy candidates removed:
+['prior_admission_count', 'prior_emergency_or_urgent_count', 'prior_total_los_days', 'days_since_previous_discharge', 'prior_icu_stay_count', 'prior_icu_los_days', 'has_prior_admission', 'has_prior_icu']
+
+Broader operational/process proxy candidates additionally removed:
+['admission_hour_sin', 'admission_hour_cos', 'admission_weekday_sin', 'admission_weekday_cos', 'admission_type', 'admission_location']
+
+Conditions:
+1. frozen_full
+2. no_prior_utilization
+3. no_operational_proxies
+4. observation_score_augmented
+
+Observation score:
+Cross-fitted logistic admission-time model of current-outcome
+observability. Development observations are out-of-fold. Test
+scores come from a model fit only on development data.
+
+Mortality-model tuning:
+None. All sensitivity models reuse the frozen Phase 5C GBM
+family and selected hyperparameters.
+
+Calibration:
+5 reference-risk quantile bins.
+Linked ICI uses linked 30-day outcomes.
+Restricted ICI uses only visible outcomes within the same
+reference-risk bins and integrates over the full test risk
+distribution.
+
+Inference:
+Paired patient-cluster bootstrap.
+Replicates = 1000
+
+Interpretation boundary:
+Prior utilization, timing, admission type, and admission location
+are treated as candidate operational/process proxies, not proven
+confounders. The observation-score condition is a controlled
+stress test, not a recommended deployed predictor.

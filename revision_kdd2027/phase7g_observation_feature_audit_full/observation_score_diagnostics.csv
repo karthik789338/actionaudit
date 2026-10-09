@@ -1,0 +1,9 @@
+metric,value
+observation_score_auc,0.7738759994359774
+observation_score_average_precision,0.2408686478976994
+observation_score_brier,0.06579706229604754
+observation_score_log_loss,0.23671535605632008
+mean_score_observed,0.16191124435355023
+mean_score_hidden,0.07151108681733255
+mortality_prediction_observation_auc,0.7729053325731291
+correlation_observation_score_with_mortality_prediction,0.806306294410453

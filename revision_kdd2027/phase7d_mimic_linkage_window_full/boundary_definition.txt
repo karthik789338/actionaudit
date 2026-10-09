@@ -1,0 +1,38 @@
+ActionAudit Phase 7D boundary definition
+
+Dataset:
+MIMIC-IV frozen Phase 5C test cohort.
+
+Population:
+Exactly 31012 frozen test admissions.
+
+Outcome:
+Fixed 30-day linked all-cause mortality.
+
+Prediction:
+Frozen Phase 5C admission-time prediction.
+
+Calibration bins:
+Frozen risk_bin assignments from the Phase 5G practitioner
+nuisance artifact.
+
+Linkage-window interpretation:
+Window 0 reproduces the original hospital-only visibility rule.
+For a positive post-discharge outcome, an extension makes the
+outcome observable when the linked death occurs within the added
+post-discharge follow-up window.
+For a negative outcome, the label becomes determinable once the
+added follow-up reaches the fixed 30-day horizon.
+Window 30 therefore determines every 30-day binary outcome.
+
+Death timing:
+Exact post-discharge deathtime is used where available. Otherwise
+MIMIC-IV subject-level DOD is used at calendar-day resolution.
+Window 0 always uses the original frozen hospital visibility flag,
+so date-only linked information cannot alter the native boundary.
+
+Interpretation:
+This is a retrospective real-data-grounded linkage-window sweep.
+It is not an estimate of a causal hospital policy effect and does
+not claim that these linkage windows correspond to actual historical
+data-sharing policies.

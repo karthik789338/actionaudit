@@ -1,0 +1,6 @@
+quantity,value
+frozen_numeric_raw_features,13
+frozen_categorical_raw_features,8
+frozen_total_raw_features,21
+manuscript_current_feature_count,31
+recommended_manuscript_feature_count,21

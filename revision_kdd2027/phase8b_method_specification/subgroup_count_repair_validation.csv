@@ -1,0 +1,5 @@
+check,passed
+support2_subgroup_counts_recovered,True
+mimic_subgroup_counts_recovered,True
+support2_hidden_total_original_boundary_equals_1270,True
+mimic_hidden_total_equals_28587,True

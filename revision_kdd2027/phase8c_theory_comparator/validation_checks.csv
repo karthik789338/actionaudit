@@ -1,0 +1,11 @@
+check,value,expected,passed
+expected_result_rows,800,800,True
+all_event_processes_invariant_within_replication,True,True,True
+all_predictions_invariant_within_replication,True,True,True
+observed_fraction_near_fixed_target,0.0012840000000000074,<=0.03,True
+reference_event_rate_exactly_invariant_across_strengths,0.0,<=1e-12,True
+true_g_tau_q05_nonincreasing,True,True,True
+strength0_q05_in_expected_moderate_range,0.04201431954840637,0.02 to 0.08,True
+strength1_q05_severe_overlap,2.408082582784122e-07,<1e-5,True
+all_numeric_results_finite,True,True,True
+oracle_aipcw_strength0_sanity,0.028398235483515194,<0.08,True

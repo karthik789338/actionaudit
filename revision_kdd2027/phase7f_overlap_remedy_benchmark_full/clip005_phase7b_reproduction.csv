@@ -1,0 +1,13 @@
+metric_phase7f,metric_phase7b,n_compared,maximum_absolute_difference,mean_absolute_difference
+complete_case_mae,complete_case_mae,800,5.551115123125783e-17,2.4841240175987878e-17
+kaplan_meier_mae,kaplan_meier_mae,800,9.71445146547012e-17,4.822639683432772e-17
+true_oracle_or_mae,true_oracle_or_mae,800,9.8879238130678e-17,4.6932943642552515e-17
+true_ipcw_mae,true_oracle_ipcw_mae,800,3.0531133177191805e-16,5.2067725131443866e-17
+true_ipcw_ess,true_ipcw_ess,800,4.547473508864641e-13,1.7905676941154525e-14
+true_fraction_event_g_clipped,true_fraction_event_g_clipped,800,9.974659986866641e-17,4.9225353611001555e-17
+true_maximum_event_weight,true_maximum_event_weight,800,1.0658141036401503e-14,7.993605777301127e-17
+learned_or_mae,learned_or_mae,800,9.8879238130678e-17,4.9101890088609767e-17
+learned_ipcw_mae,learned_ipcw_mae,800,9.71445146547012e-17,4.2977774117325393e-17
+learned_ipcw_ess,learned_ipcw_ess,800,0.0,0.0
+learned_fraction_event_g_clipped,learned_fraction_event_g_clipped,800,9.974659986866641e-17,4.878137282136874e-17
+learned_maximum_event_weight,learned_maximum_event_weight,800,3.552713678800501e-15,2.886579864025407e-17
